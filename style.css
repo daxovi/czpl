@@ -104,3 +104,23 @@ body {
 .slider__content a {
     color: white;
 }
+
+.section {
+    padding: 4em 0em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section--invert {
+    max-width: 1400px;
+    background-color: var(--cz-color);
+    margin: 0px auto;
+}
+
+.section__button {
+    background-color: var(--pl-color);
+    box-sizing: border-box;
+    width: 30%;
+    padding: 1.5em 2em;
+    text-align: center;
+}
