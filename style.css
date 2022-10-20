@@ -109,6 +109,11 @@ body {
     padding: 4em 0em;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.section--nopadding {
+    padding: 0em;
 }
 
 .section--invert {
@@ -122,5 +127,35 @@ body {
     box-sizing: border-box;
     width: 30%;
     padding: 1.5em 2em;
+    text-align: center;
+}
+
+.article {
+    width: 32%;
+}
+
+h2 {
+    text-transform: uppercase;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 1em;
+}
+
+.section--invert .article h2 {
+    color: white;
+}
+
+.article--wide {
+    width: 62%;
+}
+
+.footer--social {
+    max-width: 1400px;
+    background-color: var(--pl-color);
+    color: white;
+}
+
+.footer__network {
+    width: 22%;
     text-align: center;
 }
