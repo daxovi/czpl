@@ -68,6 +68,9 @@ body {
 }
 
 .slider {
+    background-image: url("slider1.jpg");
+    background-size: cover;
+    background-position: center;
     max-width: 1400px;
     height: 360px;
     margin: 0px auto;
