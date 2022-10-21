@@ -3,7 +3,7 @@
     --cz-color: #003399;
     --pl-color: #ff6600;
     --low-color: #aaaeb8;
-  }
+}
 
 body {
     background-color: var(--bg-color);
@@ -11,6 +11,24 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 0.9em;
 }
+
+h2 {
+    text-transform: uppercase;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 1em;
+    color: var(--pl-color);
+}
+
+h2, h3, p {
+    margin-left: 1rem;
+    color: var(--cz-color);
+}
+
+h2 {
+    color: var(--pl-color);
+}
+
 .container {
     max-width: 1100px;
     margin: 0px auto;
@@ -83,7 +101,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    justify-content:space-between;
+    justify-content: space-between;
     align-self: center;
 }
 
@@ -99,6 +117,8 @@ body {
 
 .slider__content h2 {
     margin: 0.2em;
+    color: white;
+    text-transform: none;
 }
 
 .slider__content a {
@@ -134,13 +154,6 @@ body {
     width: 32%;
 }
 
-h2 {
-    text-transform: uppercase;
-    width: 100%;
-    margin: 0;
-    margin-bottom: 1em;
-}
-
 .section--invert .article h2 {
     color: white;
 }
@@ -149,13 +162,72 @@ h2 {
     width: 62%;
 }
 
+.article img {
+    width: 100%;
+    border-radius: 3px;
+    display: block;
+}
+
+h3 {
+    font-size: 1.6em;
+    font-weight: 400;
+    color: var(--pl-color);
+    text-decoration: underline;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.article p {
+    line-height: 1.5em;
+}
+
+.article a {
+    color: var(--pl-color);
+    margin-left: 1rem;
+
+}
+
+.image--date {
+    position: relative;
+    display: inline-block;
+}
+
+.image--date:after {
+    border-radius: 3px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: "22. 8. 2022";
+    padding: 5em 1rem 1rem;
+    color: white;
+    box-sizing: border-box;
+    font-weight: 700;
+    width: 100%;
+    height: 100px;
+    display: inline-block;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+}
+
 .footer--social {
-    max-width: 1400px;
     background-color: var(--pl-color);
+    color: white;
+}
+
+.footer--contact {
+    background-color: var(--cz-color);
     color: white;
 }
 
 .footer__network {
     width: 22%;
     text-align: center;
+}
+
+.footer {
+    margin: 0px auto;
+    max-width: 1400px;
+}
+
+.footer h2 {
+    color: white;
 }
