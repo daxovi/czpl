@@ -1,32 +1,46 @@
 :root {
     --bg-color: #e4e9f0;
     --cz-color: #003399;
+    -cz-over: #004799;
     --pl-color: #ff6600;
+    --pl-over: #ff7300;
     --low-color: #aaaeb8;
 }
 
 body {
     background-color: var(--bg-color);
     margin: 0;
+    padding: 0;
     font-family: 'Inter', sans-serif;
     font-size: 0.9em;
 }
 
 h2 {
     text-transform: uppercase;
-    width: 100%;
     margin: 0;
     margin-bottom: 1em;
     color: var(--pl-color);
 }
 
-h2, h3, p {
+h2,
+h3,
+p {
     margin-left: 1rem;
     color: var(--cz-color);
 }
 
 h2 {
     color: var(--pl-color);
+}
+
+
+h3 {
+    font-size: 1.4em;
+    font-weight: 400;
+    color: var(--pl-color);
+    text-decoration: underline;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
 
 .container {
@@ -42,7 +56,8 @@ h2 {
     height: 64px;
 }
 
-.nav__item {
+.nav__item,
+.nav__item:hover {
     display: flex;
     align-items: center;
     align-self: stretch;
@@ -54,12 +69,21 @@ h2 {
     color: white;
 }
 
-.nav__item--lang {
+
+.nav__item--lang,
+.nav__item--lang:hover {
     background-color: var(--low-color);
 }
 
 .nav__item:active {
     background-color: var(--pl-color);
+}
+
+.bar {
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
 }
 
 .header {
@@ -82,7 +106,16 @@ h2 {
 .header__logo--old a {
     display: block;
     padding: 1.5em;
-    background-color: var(--low-color);
+    background: no-repeat left/contain url("btn-start.svg"), no-repeat right/contain url("btn-end.svg"), var(--low-color);
+    color: black;
+    text-decoration: none;
+    transition: background-position 0.4s ease-in-out;
+}
+
+.header__logo--old a:hover {
+    text-decoration: none;
+    background: no-repeat -50%/contain url("btn-start.svg"), no-repeat 150%/contain url("btn-end.svg"), var(--low-color);
+    transition: background-position 20s ease-in-out;
 }
 
 .slider {
@@ -130,6 +163,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    align-items: flex-end;
 }
 
 .section--nopadding {
@@ -143,11 +177,23 @@ h2 {
 }
 
 .section__button {
-    background-color: var(--pl-color);
+    background: no-repeat left/contain url("btn-start.svg"), no-repeat right/contain url("btn-end.svg"), var(--pl-color);
     box-sizing: border-box;
     width: 30%;
-    padding: 1.5em 2em;
+    padding: 1em 1.5em;
     text-align: center;
+    color: white;
+    font-size: 1.4em;
+    text-decoration: none;
+    filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.3));
+    transition: background-position 0.4s ease-in-out;
+}
+
+.section__button:hover {
+    text-decoration: none;
+    background: no-repeat -30%/contain url("btn-start.svg"), no-repeat 130%/contain url("btn-end.svg"), var(--pl-over);
+    color: white;
+    transition: background-position 20s ease-in-out;
 }
 
 .article {
@@ -168,23 +214,19 @@ h2 {
     display: block;
 }
 
-h3 {
-    font-size: 1.6em;
-    font-weight: 400;
-    color: var(--pl-color);
-    text-decoration: underline;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-}
 
 .article p {
     line-height: 1.5em;
 }
 
-.article a {
+.article a,
+.bar a {
     color: var(--pl-color);
     margin-left: 1rem;
+}
 
+.section--invert a {
+    color: white;
 }
 
 .image--date {
@@ -228,6 +270,26 @@ h3 {
     max-width: 1400px;
 }
 
-.footer h2 {
+.footer h2,
+.footer h3,
+.footer p,
+.footer a {
     color: white;
+}
+
+.footer h3 {
+    margin-left: 0;
+}
+
+.footer img {
+    border-radius: 0;
+}
+
+.footer .section {
+    align-items: center;
+}
+
+.bi {
+    font-size: 1.5rem;
+    margin-left: 0.5em;
 }

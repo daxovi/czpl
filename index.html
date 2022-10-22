@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -30,7 +31,7 @@
             </nav>
             <div class="header">
                 <div class="header__logo"><img src="logo.svg" alt="" srcset="" width="100%"></div>
-                <div class="header__logo header__logo--old"><a href="#">období 2014 - 2020</a></div>
+                <div class="header__logo header__logo--old"><a href="#">období 2014 - 2020 <i class="bi bi-box-arrow-up-right"></i></a></div>
             </div>
         </header>
     </div>
@@ -40,7 +41,7 @@
                 <img src="logo-czpl.svg" alt="" srcset="">
                 <article>
                     <h2>ukázky dobré praxe</h2>
-                    <a href="#">mapa.cz-pl.eu</a>
+                    <a href="#">mapa.cz-pl.eu<i class="bi bi-box-arrow-up-right"></i></a>
                 </article>
             </div>
 
@@ -54,25 +55,33 @@
         </nav>
     </div>
     <section class="section--invert">
-        <div class="container section">
-            <article class="article article--wide">
-                <h2>Výzvy k předkládání projektů</h2>
-            </article>
-            <article class="article">
-                <h2>kalendář akcí</h2>
-            </article>
+        <div class="container">
+            <div class="section">
+                <article class="article article--wide">
+                    <h2>Výzvy k předkládání projektů</h2>
+                    <a href="#">zobrazit další výzvy</a>
+                </article>
+                <article class="article">
+                    <h2>kalendář akcí</h2>
+                    <a href="#">zobrazit další akce</a>
+                </article>
+            </div>
         </div>
     </section>
     <div class="container">
         <section class="section">
-            <h2>novinky</h2>
-
+            <div class="bar">
+                <h2>novinky</h2>
+                <a href="#">další novinky</a>
+            </div>
+            
             <article class="article">
                 <div class="image--date">
                     <img src="photo1.jpg" alt="">
                 </div>
                 <h3>Fotografie z Výroční akce Programu</h3>
-                <p>Ve dnech 6. až 8. srpna 2022 se v Pardubicích uskutečnila Výroční akce programu přeshraniční spolupráce Interreg V-A Česká republika-Polsko.</p>
+                <p>Ve dnech 6. až 8. srpna 2022 se v Pardubicích uskutečnila Výroční akce programu přeshraniční
+                    spolupráce Interreg V-A Česká republika-Polsko.</p>
                 <a href="#">více</a>
             </article>
             <article class="article">
@@ -80,7 +89,8 @@
                     <img src="photo1.jpg" alt="">
                 </div>
                 <h3>Fotografie z Výroční akce Programu</h3>
-                <p>Ve dnech 6. až 8. srpna 2022 se v Pardubicích uskutečnila Výroční akce programu přeshraniční spolupráce Interreg V-A Česká republika-Polsko.</p>
+                <p>Ve dnech 6. až 8. srpna 2022 se v Pardubicích uskutečnila Výroční akce programu přeshraniční
+                    spolupráce Interreg V-A Česká republika-Polsko.</p>
                 <a href="#">více</a>
             </article>
             <article class="article">
@@ -88,7 +98,8 @@
                     <img src="photo1.jpg" alt="">
                 </div>
                 <h3>Fotografie z Výroční akce Programu</h3>
-                <p>Ve dnech 6. až 8. srpna 2022 se v Pardubicích uskutečnila Výroční akce programu přeshraniční spolupráce Interreg V-A Česká republika-Polsko.</p>
+                <p>Ve dnech 6. až 8. srpna 2022 se v Pardubicích uskutečnila Výroční akce programu přeshraniční
+                    spolupráce Interreg V-A Česká republika-Polsko.</p>
                 <a href="#">více</a>
             </article>
         </section>
@@ -96,27 +107,58 @@
 
     <footer class="footer">
         <div class="footer--social">
-            <section class="container section">
-                <h2>sledujte nás také na sociálních sítích</h2>
-                <article class="footer__network">
-                    <img src="facebook.svg" alt="">
-                    facebook
-                </article>
-                <article class="footer__network">
-                    instagram
-                </article>
-                <article class="footer__network">
-                    spotify
-                </article>
-                <article class="footer__network">
-                    youtube
-                </article>
-            </section>
+            <div class="container">
+                <section class="section">
+                    <div class="bar">
+                    <h2>sledujte nás také na sociálních sítích</h2>
+                </div>
+                    <article class="footer__network">
+                        <a href="#">
+                            <img src="facebook.svg" alt="">
+                            <h3>www.facebook.com/ InterregCZPL</h3>
+                        </a>
+                    </article>
+                    <article class="footer__network">
+                        <a href="#">
+                            <img src="instagram.svg" alt="">
+                            <h3>www.instagram.com/ interregczpl</h3>
+                        </a>
+                    </article>
+                    <article class="footer__network">
+                        <a href="#">
+                            <img src="youtube.svg" alt="">
+                            <h3>www.youtube.com Interreg VA CZ/PL</h3>
+                        </a>
+                    </article>
+                    <article class="footer__network">
+                        <a href="#">
+                            <img src="spotify.svg" alt="">
+                            <h3>www.spotify.com </br>Toulky pohraničím</h3>
+                        </a>
+                    </article>
+                </section>
+            </div>
         </div>
         <div class="footer--contact">
-            <section class="container section">
-                Společný sekretariát (JS - Joint Secretariat)
-            </section>
+            <div class="container">
+                <section class="section">
+                    <article class="article">
+                        <p>
+                            Společný sekretariát (JS&nbsp-&nbspJoint&nbspSecretariat) </br>
+                            Hálkova 171/2 </br>
+                            779 00 Olomouc</p>
+                    </article>
+                    <article class="article">
+                            <h3><a href="#">e-mail: js.olomouc@crr.cz</a></h3>
+                            <h3><a href="#">telefon: +420 582 777 421</a></h3>
+                    </article>
+                    <article class="article">
+                        <p>
+                        <img src="logo-czpl.svg" alt="">
+                    </p>
+                    </article>
+                </section>
+            </div>
         </div>
     </footer>
     </div>

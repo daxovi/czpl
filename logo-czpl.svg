@@ -1,18 +1,22 @@
-<svg width="343" height="80" viewBox="0 0 343 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_273_977)">
-<path d="M184.733 0.45459V79.4546H211.118V53.1179H237.513V0.45459H184.733Z" fill="white"/>
-<path opacity="0.3" d="M211.118 0.45459L237.513 26.7913V0.45459H211.118Z" fill="white"/>
-<path d="M0 0.45459V79.4546H79.1026V53.1179H26.3949V26.7913H52.7795V0.45459H0Z" fill="white"/>
-<path opacity="0.3" d="M0 0.45459V26.7913L26.3949 0.45459H0Z" fill="white"/>
-<path d="M263.826 0.45459V79.4546H343V53.1179H290.221V0.45459H263.826Z" fill="white"/>
-<path opacity="0.3" d="M316.605 53.1179L343 79.4546V53.1179H316.605Z" fill="white"/>
-<path d="M79.1025 0.45459V26.7913H105.487V79.4546H158.267V53.1179H131.882V0.45459H79.1025Z" fill="white"/>
-<path d="M105.487 26.7913H105.457V53.0871H105.487V26.7913Z" fill="#C8C5C3"/>
-<path opacity="0.3" d="M79.1025 0.45459V26.7504L105.456 0.45459H79.1025Z" fill="white"/>
+<svg width="304" height="70" viewBox="0 0 304 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_153_2732)">
+<path d="M163.729 0V70H187.113V46.6636H210.507V0H163.729Z" fill="white"/>
+<path opacity="0.3" d="M187.113 0L210.507 23.3364V0H187.113Z" fill="white"/>
+<path opacity="0.2" d="M163.756 46.6637L187.113 69.9638V46.6637H163.756ZM187.113 46.6637H187.141H187.113Z" fill="black"/>
+<path d="M0 0V70H70.1084V46.6636H23.3937V23.3364H46.7783V0H0Z" fill="white"/>
+<path opacity="0.3" d="M0 0V23.3364L23.3937 0H0Z" fill="white"/>
+<path opacity="0.3" d="M46.7511 46.6637H23.3574V70L46.7511 46.6637Z" fill="black"/>
+<path d="M233.828 0V70H304V46.6636H257.222V0H233.828Z" fill="white"/>
+<path opacity="0.2" d="M257.222 23.3363L233.828 46.6636H257.222V23.3363Z" fill="black"/>
+<path opacity="0.3" d="M280.606 46.6637L304 70V46.6637H280.606Z" fill="white"/>
+<path d="M70.1084 0V23.3364H93.493V70H140.271V46.6636H116.887V0H70.1084Z" fill="white"/>
+<path d="M93.4931 23.3363H93.4658V46.6364H93.4931V23.3363Z" fill="#C8C5C3"/>
+<path opacity="0.3" d="M116.85 23.3363H93.4658H93.4931V46.6364L116.85 23.3363Z" fill="black"/>
+<path opacity="0.3" d="M70.1084 0V23.3001L93.4657 0H70.1084Z" fill="white"/>
 </g>
 <defs>
-<clipPath id="clip0_273_977">
-<rect width="343" height="79" fill="white" transform="translate(0 0.45459)"/>
+<clipPath id="clip0_153_2732">
+<rect width="304" height="70" fill="white"/>
 </clipPath>
 </defs>
 </svg>
