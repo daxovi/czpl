@@ -174,8 +174,8 @@ h3 {
 
 .slider__controller {
     color: white;
-display: flex;
-margin-top: 3em;
+    display: flex;
+    margin-top: 3em;
 }
 
 .slider__controller .bi {
@@ -249,6 +249,48 @@ margin-top: 3em;
 
 .article--wide {
     width: 65%;
+}
+
+.nav--sidebar {
+    box-sizing: border-box;
+    width: 32%;
+    background-color: var(--cz-color);
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.nav--sidebar__header {
+    padding: 2em 2em 1em;
+}
+
+.nav--sidebar .line {
+    box-sizing: border-box;
+    margin-top: 1em;
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: var(--bg-color);
+}
+
+.nav--sidebar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 1em 2em;
+    transition: background-color 0.2s ease-in-out;
+
+}
+
+.nav--sidebar a:hover {
+    background-color: var(--cz-over);
+    transition: background-color 0.2s ease-in-out;
+
+}
+
+.nav--sidebar h2 {
+    color: white;
+    margin: 0;
 }
 
 .article img {
@@ -334,9 +376,6 @@ margin-top: 3em;
 .footer p,
 .footer a {
     color: white;
-}
-
-.footer h3 {
     margin-left: 0;
 }
 
@@ -361,6 +400,27 @@ margin-top: 3em;
 
 .nav-mini {
     display: none;
+}
+
+#content article {
+    margin-top: 2em;
+}
+
+#content article a {
+    color: var(--pl-color);
+}
+
+#content article h2 {
+    color: var(--cz-color);
+}
+
+#content h2, #content h3, #content p {
+    margin-left: 0rem;
+}
+
+#content .bi {
+    margin-left: 0.3em;
+    font-size: 1em;
 }
 
 @media screen and (max-width: 1480px) {
@@ -397,6 +457,15 @@ margin-top: 3em;
 }
 
 @media screen and (max-width: 860px) {
+    .nav--sidebar {
+        display: none;
+    }
+
+    #content .article--wide {
+        width: 100%;
+        margin: 0;
+    }
+
     .header {
         flex-flow: column;
     }
@@ -416,6 +485,7 @@ margin-top: 3em;
         color: var(--low-color);
         padding: 0;
     }
+
     .header__logo--old a:hover {
         color: var(--low-color);
     }
@@ -497,9 +567,11 @@ margin-top: 3em;
     .header__logo {
         width: 100%;
     }
+
     #news {
         gap: 2em;
     }
+
     #news .article {
         width: 100%;
     }
@@ -507,13 +579,15 @@ margin-top: 3em;
     #news .article:nth-child(3) {
         display: block;
     }
+
     .footer__network img {
         width: 60%;
     }
 
     #logo {
-        gap: 3em;
+        gap: 4em;
     }
+
     #logo .article--logo {
         width: 60%;
     }
