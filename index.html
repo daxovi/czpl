@@ -14,9 +14,13 @@
 </head>
 
 <body>
-    <div class="container">
-
-        <header class="">
+    <div class="container" id="topmenu">
+        <header>
+            <nav class="nav-mini">
+                <a href="#" class="nav__item" active><i class="bi bi-list"></i>menu</a>
+                <a href="#" class="nav__item nav__item--lang">CZ</a>
+                <a href="#" class="nav__item nav__item--lang">PL</a>
+            </nav>
             <nav class="nav">
                 <a href="#" class="nav__item" active>o programu</a>
                 <a href="#" class="nav__item">výzvy</a>
@@ -31,8 +35,7 @@
             </nav>
             <div class="header">
                 <div class="header__logo"><img src="logo.svg" alt="" srcset="" width="100%"></div>
-                <div class="header__logo header__logo--old"><a href="#">období 2014 - 2020 <i
-                            class="bi bi-box-arrow-up-right"></i></a></div>
+                <div class="header__logo header__logo--old"><a href="#">období 2014 - 2020 <i class="bi bi-box-arrow-up-right"></i></a></div>
             </div>
         </header>
     </div>
@@ -44,6 +47,9 @@
                     <h2>ukázky dobré praxe</h2>
                     <a href="#">mapa.cz-pl.eu<i class="bi bi-box-arrow-up-right"></i></a>
                 </article>
+                <div class="slider__controller">
+                    <i class="bi bi-chevron-left"></i><i class="bi bi-circle"></i><i class="bi bi-circle-fill"></i><i class="bi bi-circle"></i><i class="bi bi-circle"></i><i class="bi bi-circle"></i><i class="bi bi-chevron-right"></i>
+                </div>
             </div>
 
         </div>
@@ -73,12 +79,11 @@
         </div>
     </section>
     <div class="container">
-        <section class="section">
+        <section class="section" id="news">
             <div class="bar">
                 <h2>novinky</h2>
                 <a href="#">další novinky</a>
             </div>
-
             <article class="article">
                 <div class="image--date">
                     <img src="photo1.jpg" alt="">
@@ -144,7 +149,7 @@
             </div>
         </div>
         <div class="container">
-            <section class="section">
+            <section class="section" id="logo">
               
                 <article class="article article--logo">
                     <img src="logo-crr.svg" alt="">
