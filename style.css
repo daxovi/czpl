@@ -224,6 +224,10 @@ h3 {
     width: 32%;
 }
 
+.article--logo {
+    width: 25%;
+}
+
 .section--invert .article h2 {
     color: white;
 }
