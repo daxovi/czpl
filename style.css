@@ -567,6 +567,12 @@ h3 {
     body {
         font-size: 1.1em;
     }
+    .container {
+        padding: 0px 1em;
+    }
+    .header {
+        padding: 2em 1em;
+    }
     .slider {
         font-size: 0.9rem;
     }
