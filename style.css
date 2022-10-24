@@ -570,6 +570,10 @@ h3 {
     .slider {
         font-size: 0.9rem;
     }
+    .image--date:after {
+        padding: 3.5em 1rem 1rem;
+    }
+    
     .header__logo {
         width: 100%;
     }
